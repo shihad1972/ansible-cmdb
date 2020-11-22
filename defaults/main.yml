@@ -13,4 +13,5 @@ interfaces:
     netmask_full: 255.255.255.0
     start: 172.26.80.11
     end: 172.26.80.224
+    type: static
 dhcp_conf_dir: /etc/dhcp
