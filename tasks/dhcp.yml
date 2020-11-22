@@ -1,0 +1,10 @@
+---
+
+- name: Create basic DHCPD configuration file
+  become: true
+  copy:
+    src: dhcpd.conf
+    dest: "{{ dhcp_conf_dir }}/dhcpd.conf"
+    mode: 0644
+    owner: root
+    group: root
