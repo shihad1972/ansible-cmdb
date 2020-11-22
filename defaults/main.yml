@@ -18,3 +18,4 @@ interfaces:
     domain: "{{ domain }}"
 dhcp_conf_dir: /etc/dhcp
 do_mysql: true
+mysql_password: CwIn.tqjE2S_gqb4-xAet5D

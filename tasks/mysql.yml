@@ -18,7 +18,21 @@
     state: started
     enabled: yes
 
+- name: Set database root password
+  become: true
+  shell: mysql -e "ALTER USER 'root'@'localhost' IDENTIFIED BY \'{{ mysql_password }}\';"
+    
+- name: Create initial my.cnf file
+  become: true
+  copy:
+    content: "[client]\nuser=root\npassword={{ mysql_password }}\n"
+    dest: "/root/.my.cnf"
+    mode: 0600
+    owner: root
+    group: root
+
 - name: Create initial database container
+  become: true
   mysql_db:
-    login_name: root
+    login_user: root
     name: "{{ mysql_db_name }}"
