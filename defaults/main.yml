@@ -17,3 +17,6 @@ interfaces:
     type: static
     domain: "{{ domain }}"
 dhcp_conf_dir: /etc/dhcp
+do_mysql: true
+mysql_db_name: ailsa
+mysql_service: maraidb

@@ -1,0 +1,17 @@
+---
+
+- name: Grab distro specific mysql vars
+  include_vars: debian-mysql.yml
+  when: ansible_distribution == 'Debian'
+
+- name: Install the mysql package
+  package:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ mysql_packages }}"
+
+- name: Ensure database is started
+  service:
+    name: "{{ mysql_service }}"
+    state: running
+    enabled: yes
