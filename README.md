@@ -8,10 +8,13 @@ Requirements
 
 No prerequisites.
 
-Role Variables
+Role Configurable Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+do_cmdb_user: Create cmdb user
+cmdb_user:    UNIX user; defaults to cmdb
+cmdb_group:   UNIX group; defaults to cmdb
+cmdb_uid:     UNIX uid of cmdb user; defaults to 145
 
 Dependencies
 ------------

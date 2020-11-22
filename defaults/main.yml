@@ -1,2 +1,6 @@
 ---
 # defaults file for cmdb
+
+cmdb_uname: cmdb
+cmdb_group: "{{ cmdb_uname }}"
+cmdb_uid: 145
