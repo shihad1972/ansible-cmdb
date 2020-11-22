@@ -2,4 +2,6 @@
 
 mysql_packages: 
   - mariadb-server
-  - mariadb-server-10.3
+  - mariadb-plugin-gssapi-server
+  - mariadb-plugin-gssapi-client
+

@@ -15,5 +15,5 @@
   become: true
   service:
     name: "{{ mysql_service }}"
-    state: running
+    state: started
     enabled: yes
