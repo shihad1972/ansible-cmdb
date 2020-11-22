@@ -19,6 +19,7 @@ cmdb_uid:     UNIX uid of cmdb user; defaults to 145
 interface:    Network Interface to configure for DHCP
 interfaces:   A dict of network configuration for your interface.
               This will auto configure to 172.26.80.0/24
+do_mysql:     Configure mysql on the instance.
 
 Dependencies
 ------------
