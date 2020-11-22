@@ -7,3 +7,4 @@
 - import_tasks: debian-web-server.yml
   when: ansible_distribution == 'Debian'
 - import_tasks: tftp.yml
+- import_tasks: dhcp.yml

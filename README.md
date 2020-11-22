@@ -11,6 +11,7 @@ No prerequisites.
 Role Configurable Variables
 --------------
 
+domain:       Initial DNS domain
 do_cmdb_user: Create cmdb user
 cmdb_user:    UNIX user; defaults to cmdb
 cmdb_group:   UNIX group; defaults to cmdb
