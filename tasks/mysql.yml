@@ -5,12 +5,14 @@
   when: ansible_distribution == 'Debian'
 
 - name: Install the mysql package
+  become: true
   package:
     name: "{{ item }}"
     state: present
   loop: "{{ mysql_packages }}"
 
 - name: Ensure database is started
+  become: true
   service:
     name: "{{ mysql_service }}"
     state: running
