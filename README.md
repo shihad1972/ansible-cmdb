@@ -15,6 +15,9 @@ do_cmdb_user: Create cmdb user
 cmdb_user:    UNIX user; defaults to cmdb
 cmdb_group:   UNIX group; defaults to cmdb
 cmdb_uid:     UNIX uid of cmdb user; defaults to 145
+interface:    Network Interface to configure for DHCP
+interfaces:   A dict of network configuration for your interface.
+              This will auto configure to 172.26.80.0/24
 
 Dependencies
 ------------
