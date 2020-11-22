@@ -1,12 +1,12 @@
-Role Name
+cmdb
 =========
 
-A brief description of the role goes here.
+Install prerequisites for the ailsatech.net CMDB software
 
 Requirements
 ------------
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+No prerequisites.
 
 Role Variables
 --------------
@@ -30,9 +30,9 @@ Including an example of how to use your role (for instance, with variables passe
 License
 -------
 
-BSD
+GPLv3
 
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+Iain M. Conochie <iain@thargoid.co.uk>

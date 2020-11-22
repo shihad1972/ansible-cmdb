@@ -1,2 +1,4 @@
 ---
 # tasks file for cmdb
+
+import_tasks: packages.yml
