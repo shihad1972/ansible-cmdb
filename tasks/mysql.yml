@@ -17,3 +17,8 @@
     name: "{{ mysql_service }}"
     state: started
     enabled: yes
+
+- name: Create initial database container
+  mysql_db:
+    login_name: root
+    name: "{{ mysql_db_name }}"
